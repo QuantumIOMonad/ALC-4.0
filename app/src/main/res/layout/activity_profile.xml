@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/describe_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_height="250dp"
+        tools:layout_width="250dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="#333333"
+        android:fontFamily="@font/fira_mono_bold"
+        android:text="@string/godfred_asamoah"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tv_label_track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/fira_mono_bold"
+        android:textColor="#333333"
+        android:text="@string/string_label_track"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/tv_value_track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/fira_mono"
+        android:text="@string/android"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_label_track" />
+
+    <TextView
+        android:id="@+id/tv_label_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/fira_mono_bold"
+        android:textColor="#333333"
+        android:text="@string/string_label_country"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_label_track"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_track" />
+
+    <TextView
+        android:id="@+id/tv_value_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fira_mono"
+        android:text="@string/ghana"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_value_track"
+        app:layout_constraintTop_toTopOf="@+id/tv_label_country" />
+
+    <TextView
+        android:id="@+id/tv_label_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/fira_mono_bold"
+        android:textColor="#333333"
+        android:text="@string/email"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_label_country"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_country" />
+
+    <TextView
+        android:id="@+id/tv_value_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fira_mono"
+        android:text="@string/gfredev_gmail_com"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_value_country"
+        app:layout_constraintTop_toTopOf="@+id/tv_label_email" />
+
+    <TextView
+        android:id="@+id/tv_label_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/fira_mono_bold"
+        android:textColor="#333333"
+        android:text="@string/phone_number"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_label_email"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_email" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fira_mono"
+        android:text="@string/_7_919_647_6488"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_value_email"
+        app:layout_constraintTop_toTopOf="@+id/tv_label_phone" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/fira_mono_bold"
+        android:textColor="#333333"
+        android:text="@string/slack_username"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_label_phone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_phone" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fira_mono"
+        android:text="@string/gfred"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

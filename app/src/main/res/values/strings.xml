@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ALC</string>
+    <string name="string_about_alc">About ALC</string>
+    <string name="string_my_profile">My Profile</string>
+    <string name="describe_photo">Profile Photo</string>
+    <string name="godfred_asamoah">Godfred Asamoah</string>
+    <string name="string_label_track">Track:</string>
+    <string name="string_label_country">Country:</string>
+    <string name="android">Android</string>
+    <string name="ghana">Ghana</string>
+    <string name="email">Email:</string>
+    <string name="gfredev_gmail_com">gfredev@gmail.com</string>
+    <string name="phone_number">Phone #:</string>
+    <string name="_7_919_647_6488">+79196476488</string>
+    <string name="slack_username">Slack Username:</string>
+    <string name="gfred">\@gfred</string>
+    <string name="background_image">Background Image</string>
+    <string name="welcome_to_alc_4_0">Welcome to ALC 4.0</string>
+</resources>
