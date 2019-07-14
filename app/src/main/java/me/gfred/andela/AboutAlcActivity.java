@@ -76,4 +76,15 @@ public class AboutAlcActivity extends AppCompatActivity {
             Log.w("ALC", "Finished loading page");
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        if (alcWebview != null) {
+            if (alcWebview.canGoBack()) {
+                alcWebview.goBack();
+            }
+        } else {
+            super.onBackPressed();
+        }
+    }
 }
