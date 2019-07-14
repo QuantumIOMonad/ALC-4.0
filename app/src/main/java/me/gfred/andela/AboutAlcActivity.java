@@ -83,8 +83,9 @@ public class AboutAlcActivity extends AppCompatActivity {
             if (alcWebview.canGoBack()) {
                 alcWebview.goBack();
             }
-        } else {
-            super.onBackPressed();
+            else {
+                super.onBackPressed();
+            }
         }
     }
 }
