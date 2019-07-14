@@ -1,10 +1,14 @@
 package me.gfred.andela;
 
+import android.annotation.SuppressLint;
 import android.net.http.SslError;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +21,10 @@ public class AboutAlcActivity extends AppCompatActivity {
     @BindView(R.id.webview_alc)
     WebView alcWebview;
 
+    @BindView(R.id.progressBar)
+    ProgressBar progressBar;
+
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +33,7 @@ public class AboutAlcActivity extends AppCompatActivity {
 
         alcWebview.setWebViewClient(new MyWebViewClient());
         alcWebview.getSettings().setDomStorageEnabled(true);
+        alcWebview.getSettings().setJavaScriptEnabled(true);
         alcWebview.loadUrl("https://andela.com/alc");
     }
 
@@ -59,5 +68,12 @@ public class AboutAlcActivity extends AppCompatActivity {
             final AlertDialog dialog = builder.create();
             dialog.show();
         }
+
+        @Override
+        public void onPageFinished(WebView view, String url) {
+            super.onPageFinished(view, url);
+            progressBar.setVisibility(View.INVISIBLE);
+            Log.w("ALC", "Finished loading page");
         }
     }
+}
